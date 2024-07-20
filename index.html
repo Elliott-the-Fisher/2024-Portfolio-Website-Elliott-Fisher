@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/jpg" href="./imgs/brandmark-raster.PNG">
+
+</head>
+<body>
+    
+
+    <header>
+        <a href="index.html" class="nav-holder">
+            <div class="brandmark"> <img src="imgs/SVG-assets/Brandmark-vector-transparent.svg" alt=""></div>
+            <div class="brandmark-text">Elliott Fisher <aside>Developer & Digital Designer</aside></div>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="button">Contact</a></li>
+            </ul>
+            <a href="#" class="mobile-toggle" onclick="toggleMobileMenu();">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                </svg>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero container">
+            <div class="hero-1">
+                <div>
+                    <h1><small>Hi I'm&nbsp;</small>Elliott Fisher</h1>
+                    <p>Design and Developer in Philly who specializes in creating responsive and accessible websites from wireframe to launch.</p>
+                    <span>I'm also interested in AI tools which is why I've been implementing OpenAI and Stable Diffusion to my daily workflows.</span>
+                    <div class="call-to-action">
+                        <a href="./Fisher-Resume-2024.pdf" class="button black">View Resume</a>
+                        <a href="mailto:elliottfisherdesign@gmail.com" class="button white">Contact Me</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.behance.net/elliottfisherdesign">
+                            <img src="./imgs/behance-logo.png" alt="Behance" width="48px">
+                        </a>
+                        <a href="https://www.linkedin.com/in/elliottfisherdesign/">
+                            <img src="./imgs/linkedin.png" alt="LinkedIn" width="48px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-2">
+                <img src="./imgs/2023-mediumshot-removebg3.png" alt="Elliott Fisher" width="100%">
+            </div>
+        </section>
+
+        <section class="logos container">
+            <div class="marquee">
+                <div class="track">
+                    <img src="./imgs/SVG-assets/XD.svg" alt="Adobe XD" width="80" />
+                    <img src="./imgs/SVG-assets/WordPress_blue_logo.svg" alt="WordPress" width="80" />
+                    <img src="./imgs/SVG-assets/WooCommerce_logo.svg" alt="WooCommerce" width="80" />
+                    <img src="./imgs/SVG-assets/Webflow_logo_2023.svg" alt="WebFlow" width="80" />
+                    <img src="./imgs/SVG-assets/w3_html5-icon.svg" alt="HTML" width="80" />
+					<img src="./imgs/SVG-assets/w3_css-icon.svg" alt="CSS" width="80"/>
+                    <img src="./imgs/stabilityAI-logo.jpg" style="border-radius: 10px;" alt="Stable Diffusion" width="80"/>
+                    <img src="./imgs/SVG-assets/Premiere-Pro.svg" alt="Adobe Premiere" width="80" />
+                    <img src="./imgs/SVG-assets/php-svgrepo-com.svg" alt="PHP" width="80" />
+					<img src="./imgs/SVG-assets/js.svg" style="border-radius: 10px;"  alt="JavaScript" width="80" />
+                    <img src="./imgs/SVG-assets/jquery-vertical.svg" alt="jQuery" width="80" />
+                    <img src="./imgs/SVG-assets/InDesign.svg" alt="Adobe Indesign" width="80" />
+                    <img src="./imgs/SVG-assets/Illustrator.svg" alt="Adobe Illustrator" width="80" />
+                    <img src="./imgs/SVG-assets/google_analytics-official.svg" alt="Google Analytics" width="80" />
+                    <img src="./imgs/SVG-assets/Figma.svg" alt="Figma" width="80" />
+                    <img src="./imgs/SVG-assets/Bootstrap_logo.svg" alt="Bootstrap" width="80" />
+                    <img src="./imgs/SVG-assets/XD.svg" alt="Adobe XD" width="80" />
+                    <img src="./imgs/SVG-assets/WordPress_blue_logo.svg" alt="WordPress" width="80" />
+                    <img src="./imgs/SVG-assets/WooCommerce_logo.svg" alt="WooCommerce" width="80" />
+                    <img src="./imgs/SVG-assets/Webflow_logo_2023.svg" alt="WebFlow" width="80" />
+                    <img src="./imgs/SVG-assets/w3_html5-icon.svg" alt="HTML" width="80" />
+					<img src="./imgs/SVG-assets/w3_css-icon.svg" alt="CSS" width="80"/>
+                    <img src="./imgs/SVG-assets/Premiere-Pro.svg" alt="Adobe Premiere" width="80" />
+                    <img src="./imgs/SVG-assets/php-svgrepo-com.svg" alt="PHP" width="80" />
+					<img src="./imgs/SVG-assets/js.svg" style="border-radius: 10px;" alt="JavaScript" width="80" />
+                    <img src="./imgs/SVG-assets/jquery-vertical.svg" alt="jQuery" width="80" />
+                    <img src="./imgs/SVG-assets/InDesign.svg" alt="Adobe Indesign" width="80" />
+                    <img src="./imgs/stabilityAI-logo.jpg" style="border-radius: 10px;" alt= "Stable Diffusion" width="80"/>
+                    <img src="./imgs/SVG-assets/Illustrator.svg" alt="Adobe Illustrator" width="80" />
+                    <img src="./imgs/SVG-assets/google_analytics-official.svg" alt="Google Analytics" width="80" />
+                    <img src="./imgs/SVG-assets/Figma.svg" alt="Figma" width="80" />
+                    <img src="./imgs/SVG-assets/Bootstrap_logo.svg" alt="Bootstrap" width="80" />
+
+					
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills container">
+            <h2>
+                <small>My Primary</small>
+                Skills
+            </h2>
+            <div class="content-holder">
+                <div class="left-column">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>PHP</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                        <li>Wordpress</li>
+                        <li>JavaScript</li>
+                        <li>SEO Management</li>
+                    </ul>
+                    <h3>UX/UI Design</h3>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Sketch</li>
+                        <li>Webflow</li>
+                        <li>Elementor</li>
+                        <li>Bootstrap Studio</li>
+                        <li>Adobe Creative Suite</li>
+
+                    </ul>
+                </div>
+                <div class="right-column">
+                    <div class="skill-logo-icons">
+                        <img src="imgs/skill_logos-01.png" alt="Front-end Development Icon">
+                        <img src="imgs/skill_logos-02.png" alt="UI Design Icon">
+                        <img src="imgs/skill_logos-03.png" alt="Graphic Design Icon">
+                        <img src="imgs/skill_logos-04.png" alt="UX Design Icon">
+                    </div>
+                    <h3>What I do</h3>
+                    <p>
+                        I'm a Web Developer and Designer in the Philadelphia area. I specialize in mobile friendly, modern, & professional digital interfaces.
+                    </p>
+                  
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="work-experience container">
+            <h2>
+                <small>Relevant</small>
+                Work Experience
+            </h2>
+            <div class="jobs">
+                <article>
+                    <figure>
+                        <div>
+                            <img src="./imgs/Kanbar-building.jpg" 
+                                 alt="Workplace 1 -" 
+                                 width="100%">
+                            <figcaption>
+                                Graphic Design
+                            </figcaption>
+                        </div>
+                    </figure>
+                    <h3>Thomas Jefferson University Office of Student Engagement</h3>
+                    <div>Aug 2016 - May 2019</div>
+                    <p>Lead Graphic Designer</p>
+                </article>
+                <article>
+                    <figure>
+                        <div>
+                            <img src="./imgs/educard (3).jpg" 
+                                 alt="Workplace 2 -" 
+                                 width="100%">
+                            <figcaption>
+                                Web & Graphic Design
+                            </figcaption>
+                        </div>
+                    </figure>
+                    <h3>EDUCONNECT Tutoring Agency</h3>
+                    <div>May 2018 - Sep 2018</div>
+                    <p>Web Designer</p>
+                </article>
+                <article>
+                    <figure>
+                        <div>
+                            <img src="./imgs/1seo-interview-screencap.PNG" 
+                                 alt="Workplace 3 -" 
+                                 width="100%">
+                            <figcaption>
+                                Front-end development & Web Design
+                            </figcaption>
+                        </div>
+                    </figure>
+                    <h3>1SEO Digital Agency</h3>
+                    <div>January 2023 - January 2024</div>
+                    <p>QA Developer & UX Designer</p>
+                </article>
+            </div>
+        </section>
+        <section id="projects" class="bento container">
+            <h2>
+                <small>Featured</small>
+                Completed Projects
+            </h2>
+            <div class="bento-grid">
+                <div class="bento-item">
+                    <img src="./imgs/Pure-cluster-view.png" 
+                         alt="Pure Plumbing Web Design Showcase" 
+                         width="100%">
+                    <div class="button-overlay">
+                        <a href="https://www.pureplumbingdfw.com/">
+                            <button class="button black">View Live Site</button>
+                        </a>
+                    <a href="https://www.behance.net/gallery/202980767/Pure-Plumbing-Website-Redesign-Development-Showcase">
+                        <button class="button white">Project Overview</button>
+                    </a>
+                    </div>
+                </div>
+                <div class="bento-item">
+                    <img src="./imgs/reeds-homepage-desktop.png" 
+                         alt="" 
+                         width="100%">
+                         <div class="button-overlay">
+                            <a href="https://reedshomesolut.wpenginepowered.com/">
+                                <button class="button black">View Live Site</button>
+                            </a>
+                        </div>
+                </div>
+                <div class="bento-item">
+                    <img src="./imgs/WesCarver-desktop-home-lower.PNG" 
+                         alt="Wes Carver Electric: site design" 
+                         width="100%">
+                         <div class="button-overlay">
+                            <a href="https://wescarverelectric.com/">
+                                <button class="button black">View Live Site</button>
+                            </a>
+                        </div>
+                </div>
+                <div class="bento-item">
+                    <img src="./imgs/duct-crew-full-desktop.png" 
+                         alt="Duct Crew Design and Development Showcase" 
+                         width="100%">
+                         <div class="button-overlay">
+                            <a href="https://ductcrew.com/">
+                                <button class="button black">View Live Site</button>
+                            </a>
+                        <a href="https://www.behance.net/gallery/203138319/Duct-Crew-Web-Design-Development-Showcase">
+                            <button class="button white">Project Overview</button>
+                        </a>
+                        </div>
+                </div>
+                <div class="bento-item">
+                    <img src="./imgs/silly_hero(nofilter).png" 
+                         alt="" 
+                         width="100%">
+                         <div class="button-overlay">
+                        <a href="https://www.behance.net/gallery/148962195/Silly-Philly">
+                            <button class="button white">Project Overview</button>
+                        </a>
+                        </div>
+                </div>
+                <div class="bento-item">
+                    <img src="./imgs/UR-showcase-screens-all-devices-white.png" 
+                         alt="" 
+                         width="95%">
+                         <div class="button-overlay">
+                            <a href="https://uniquerepair.com/">
+                                <button class="button black">View Live Site</button>
+                            </a>
+                        <a href="https://www.behance.net/gallery/19280575/Unique-Repair-Services-Website-Redesign-Development">
+                            <button class="button white">Project Overview</button>
+                        </a>
+                        </div>
+                </div>
+            </div>
+        </section>
+        
+       
+
+        <section id="contact" class="contact container">
+            <div class="hero-2">
+                <img src="./imgs/me-seated-mediumshot-edited-close.png" alt="Elliott Fisher" width="100%">
+            </div>
+            <div class="hero-1">
+                <div>
+                    <h1><small>Let’s build &nbsp;</small>something great</h1>
+                    <p>Whether it’s a new website, refining an existing one, or tackling a coding challenge, I’m here to assist. Drop me a message with your ideas or questions, and let’s work together to achieve your goals. Looking forward to hearing from you!
+                    </p>
+                    
+                    <div class="call-to-action">
+                        <a href="./Fisher-Resume-2024.pdf" class="button black">View Resume</a>
+                        <a href="mailto:elliottfisherdesign@gmail.com" class="button white">Email Me</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.behance.net/elliottfisherdesign">
+                            <img src="./imgs/behance-logo.png" alt="Behance" width="48px">
+                        </a>
+                        <a href="https://www.linkedin.com/in/elliottfisherdesign/">
+                            <img src="./imgs/linkedin.png" alt="LinkedIn" width="48px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+    </main>
+
+    <footer>
+        <img src="imgs/Brandmark-vector-transparent.svg" alt="brandmark">
+        <p>Elliott Fisher Portfolio Website</p>
+        <a href="#"> Back to Top</a>
+        
+        <span>&copy2024</span>
+      </footer>
+
+    <div class="loader-wrapper">            
+                <div id="brandmark-animation">
+                    <svg viewBox="0 0 500 600" style="filter: url(#inner-shadow);">
+                        <defs>
+                            <filter id="inner-shadow" x="-50%" y="-50%" width="200%" height="200%">
+                                <feGaussianBlur in="SourceAlpha" stdDeviation="30" result="blur"/>
+                                <feOffset in="blur" dx="-20" dy="20" result="offsetBlur"/> <!-- Adjust dx and dy to move the shadow inward -->
+                                <feComposite in="SourceGraphic" in2="offsetBlur" operator="over"/>
+                            </filter>
+                        </defs>
+                        <g transform="translate(100, 100)">
+                            <path d="M246.773,55.6V281.147H198.954v-44.8h.135V188.531H47.834V142.384H200.243V94.565H47.834V47.819H201.1V0H0V47.819H.012V188.531H0V236.35H170.924v57.577h89.592V55.6Z" fill="#ffffff" stroke="#ffffff" stroke-width="1"/>
+                        </g>
+                    </svg>
+                    
+                    
+                    
+                </div>
+    </div>
+
+    <script>
+        $(window).on("load", function() {
+            setTimeout(function() {
+                $(".loader-wrapper").fadeOut("slow");
+            }, 10000); // Change 4000 to the desired duration in milliseconds
+        });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
