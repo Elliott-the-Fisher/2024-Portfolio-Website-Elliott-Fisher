@@ -129,7 +129,7 @@ header {
         list-style-type: none;
         gap: 5px;
         @media (max-width: 768px){
-          background-color: var(--blue-100);
+          background-color: var(--base-100);
         }
         li {
           display: inline-block;
@@ -211,13 +211,18 @@ header {
   z-index: 2;
   @media (max-width:768px){
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
     
   }
 }
 .button.CTA{
   background-color: var(--yellow-400);
+  text-align: center;
+  @media (max-width:768px){
+    border-radius: 0px;
+  }
+  
 }
 .button.CTA:hover{
   background-color: var(--base-100);
@@ -520,6 +525,8 @@ h3{
       padding: 20px;
       @media (max-width: 768px){
        justify-self: start; 
+       padding: 20px 10px;
+       border-radius: 10px;
       }
       .skill-logo-icons{
         padding-bottom: 20px;

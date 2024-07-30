@@ -25,7 +25,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact" class="button">Contact</a></li>
+                <li><a href="#contact" class="button CTA">Contact</a></li>
             </ul>
             <a href="#" class="mobile-toggle" onclick="toggleMobileMenu();">
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -39,18 +39,21 @@
             <div class="hero-1">
                 <div>
                     <h1><small>Hi I'm&nbsp;</small>Elliott Fisher</h1>
-                    <p>Design and Developer in Philly who specializes in creating responsive and accessible websites from wireframe to launch.</p>
-                    <span>I'm also interested in AI tools which is why I've been implementing OpenAI and Stable Diffusion to my daily workflows.</span>
+                    <p>I'm a Designer, Developer and UX Specialist in Philly. When I'm not working, you can find me hiking along abandoned railroad tracks or crashing my drone into trees at parks around the greater Philadelphia area.<span id="ellipses">...</span><span id="more">&nbsp;I take great pride in the quality of my work, which is why I'm a strong advocate of the agile workflow. To me, there's nothing more fulfilling in my career than seeing my work being appreciated by team members and clients. I thrive on challenges, especially those that push me out of my comfort zone. 
+                    </span></p>
+                    <button onclick="readmoreToggle()" id="readmoreButton">Read more</button>
                     <div class="call-to-action">
                         <a href="./Fisher-Resume-2024.pdf" class="button black">View Resume</a>
                         <a href="mailto:elliottfisherdesign@gmail.com" class="button white">Contact Me</a>
                     </div>
                     <div class="social-links">
                         <a href="https://www.behance.net/elliottfisherdesign">
-                            <img src="./imgs/behance-logo.png" alt="Behance" width="48px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M8.228 15.01h-2.228v-2.01h2.261c1.878 0 2.003 2.01-.033 2.01zm6.758-2.677h3.018c-.117-1.715-2.73-1.977-3.018 0zm-6.804-3.333h-2.182v2h2.389c1.673 0 1.937-2-.207-2zm15.818-4v14c0 2.761-2.238 5-5 5h-14c-2.762 0-5-2.239-5-5v-14c0-2.761 2.238-5 5-5h14c2.762 0 5 2.239 5 5zm-10 3h5v-1h-5v1zm-3.552 3.618c1.907-.974 1.837-4.55-1.813-4.604h-4.635v9.978h4.311c4.522 0 4.445-4.534 2.137-5.374zm9.487.602c-.274-1.763-1.528-2.95-3.583-2.95-2.094 0-3.352 1.34-3.352 3.947 0 2.631 1.367 3.783 3.416 3.783s3.106-1.135 3.4-2h-2.111c-.736.855-2.893.521-2.767-1.353h5.06c.01-.634-.012-1.089-.063-1.427z"/>
+                            </svg>
                         </a>
                         <a href="https://www.linkedin.com/in/elliottfisherdesign/">
-                            <img src="./imgs/linkedin.png" alt="LinkedIn" width="48px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -59,7 +62,6 @@
                 <img src="./imgs/2023-mediumshot-removebg3.png" alt="Elliott Fisher" width="100%">
             </div>
         </section>
-
         <section class="logos container">
             <div class="marquee">
                 <div class="track">
@@ -107,36 +109,51 @@
             </h2>
             <div class="content-holder">
                 <div class="left-column">
-                    <h3>Web Development</h3>
-                    <ul>
-                        <li>PHP</li>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                        <li>Wordpress</li>
-                        <li>JavaScript</li>
-                        <li>SEO Management</li>
-                    </ul>
-                    <h3>UX/UI Design</h3>
-                    <ul>
-                        <li>Figma</li>
-                        <li>Sketch</li>
-                        <li>Webflow</li>
-                        <li>Elementor</li>
-                        <li>Bootstrap Studio</li>
-                        <li>Adobe Creative Suite</li>
-
-                    </ul>
+                    <h3>Web Development Languages</h3>
+                    <div class="skill-type">
+                        <img src="imgs/skill_logos-01.png" alt="Front-end Development Icon">
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>Git</li>
+                            <li>PHP</li>
+                            <li>Wordpress</li>
+                            <li>Visual Studio Code</li>
+                        </ul>
+                </div>
+                    <h3>UX/UI Tools</h3>
+                    <div class="skill-type">
+                        <img src="imgs/skill_logos-04.png" alt="UI Design Icon">
+                        <ul>
+                            <li>Figma</li>
+                            <li>Adobe XD</li>
+                            <li>Webflow</li>
+                            <li>Bootstrap Studio</li>
+                            <li>Elementor Pro</li>
+                        </ul>
+                </div>
+                    <h3>Graphic Design Software</h3>
+                    <div class="skill-type">
+                        <img src="imgs/skill_logos-03.png" alt="Graphic Design Icon">
+                        <ul>
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>InDesign</li>
+                            <li>Premiere</li>
+                            <li>Elementor</li>
+                        </ul>
+                  </div>
                 </div>
                 <div class="right-column">
-                    <div class="skill-logo-icons">
+                    <!-- <div class="skill-logo-icons">
                         <img src="imgs/skill_logos-01.png" alt="Front-end Development Icon">
                         <img src="imgs/skill_logos-02.png" alt="UI Design Icon">
                         <img src="imgs/skill_logos-03.png" alt="Graphic Design Icon">
                         <img src="imgs/skill_logos-04.png" alt="UX Design Icon">
-                    </div>
+                    </div> -->
                     <h3>What I do</h3>
                     <p>
-                        I'm a Web Developer and Designer in the Philadelphia area. I specialize in mobile friendly, modern, & professional digital interfaces.
+                        My primary skill set lies in my ability to create from wireframe to launch. It's with this Designer-Developer toolset, that I am able to provide comprehensive solutions at each stage of a project. The upshot has lent my projects closer design precision and faster turnarounds. I'm also passionate about AI, and continue to find new tools and tactics with software like OpenAI and Stable Diffusion into my daily workflows.
                     </p>
                   
                 </div>
@@ -272,45 +289,44 @@
                 </div>
             </div>
         </section>
-        
-       
-
         <section id="contact" class="contact container">
             <div class="hero-2">
                 <img src="./imgs/me-seated-mediumshot-edited-close.png" alt="Elliott Fisher" width="100%">
             </div>
             <div class="hero-1">
                 <div>
-                    <h1><small>Let’s build &nbsp;</small>something great</h1>
+                    <h1><small>Let’s get &nbsp;</small>to work</h1>
                     <p>Whether it’s a new website, refining an existing one, or tackling a coding challenge, I’m here to assist. Drop me a message with your ideas or questions, and let’s work together to achieve your goals. Looking forward to hearing from you!
                     </p>
+                    <br>
                     
                     <div class="call-to-action">
                         <a href="./Fisher-Resume-2024.pdf" class="button black">View Resume</a>
-                        <a href="mailto:elliottfisherdesign@gmail.com" class="button white">Email Me</a>
+                        <a href="mailto:elliottfisherdesign@gmail.com" class="button white">Send Me a Message</a>
                     </div>
-                    <div class="social-links">
+                    <!-- <div class="social-links">
                         <a href="https://www.behance.net/elliottfisherdesign">
-                            <img src="./imgs/behance-logo.png" alt="Behance" width="48px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M8.228 15.01h-2.228v-2.01h2.261c1.878 0 2.003 2.01-.033 2.01zm6.758-2.677h3.018c-.117-1.715-2.73-1.977-3.018 0zm-6.804-3.333h-2.182v2h2.389c1.673 0 1.937-2-.207-2zm15.818-4v14c0 2.761-2.238 5-5 5h-14c-2.762 0-5-2.239-5-5v-14c0-2.761 2.238-5 5-5h14c2.762 0 5 2.239 5 5zm-10 3h5v-1h-5v1zm-3.552 3.618c1.907-.974 1.837-4.55-1.813-4.604h-4.635v9.978h4.311c4.522 0 4.445-4.534 2.137-5.374zm9.487.602c-.274-1.763-1.528-2.95-3.583-2.95-2.094 0-3.352 1.34-3.352 3.947 0 2.631 1.367 3.783 3.416 3.783s3.106-1.135 3.4-2h-2.111c-.736.855-2.893.521-2.767-1.353h5.06c.01-.634-.012-1.089-.063-1.427z"/>
+                            </svg>
                         </a>
                         <a href="https://www.linkedin.com/in/elliottfisherdesign/">
-                            <img src="./imgs/linkedin.png" alt="LinkedIn" width="48px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             
         </section>
-        
     </main>
 
     <footer>
-        <img src="imgs/Brandmark-vector-transparent.svg" alt="brandmark">
+        <img src="imgs/SVG-assets/fisher_brandmark_transparant.svg" alt="brandmark">
         <p>Elliott Fisher Portfolio Website</p>
         <a href="#"> Back to Top</a>
         
         <span>&copy2024</span>
-      </footer>
+    </footer>
 
     <div class="loader-wrapper">            
                 <div id="brandmark-animation">
@@ -336,7 +352,7 @@
         $(window).on("load", function() {
             setTimeout(function() {
                 $(".loader-wrapper").fadeOut("slow");
-            }, 10000); // Change 4000 to the desired duration in milliseconds
+            }, 5000);
         });
     </script>
     
