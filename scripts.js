@@ -27,13 +27,35 @@ function runAnimation() {
 }
 
 $(window).on("load", function() {
-  runAnimation(); // Run the animation on load
+  runAnimation();
   setTimeout(function() {
       $(".loader-wrapper").fadeOut("slow");
-  }, 3000); // Adjust this duration as needed
+  }, 3000); // loader animation duration
 });
 
-  
+function readmoreToggle() {
+  var ellipses = document.getElementById("ellipses");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("readmoreButton");
+
+  if (moreText.style.display === "none" || moreText.style.display === "") {
+    ellipses.style.display = "none";
+    moreText.style.display = "inline";
+    setTimeout(() => {
+      moreText.style.opacity = 1;
+    }, 10); // Small delay to trigger transition
+    btnText.innerHTML = "Read less";
+    btnText.classList.add("toggled");
+  } else {
+    ellipses.style.display = "inline";
+    moreText.style.opacity = 0;
+    setTimeout(() => {
+      moreText.style.display = "none";
+    }, 300); // toggle timeout transition duration
+    btnText.innerHTML = "Read more";
+    btnText.classList.remove("toggled");
+  }
+}
 
 
 // // script.js
